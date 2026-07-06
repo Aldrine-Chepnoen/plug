@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B6E4F"/>
+      <stop offset="1" stop-color="#084F39"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background (Android adaptive-icon safe) -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- Location-pin silhouette: stands in for "place", but the app never uses GPS -->
+  <path d="M256 96
+           c-72 0 -130 58 -130 130
+           c0 96 130 208 130 208
+           s130 -112 130 -208
+           c0 -72 -58 -130 -130 -130 z"
+        fill="#FFFFFF" fill-opacity="0.10"/>
+
+  <!-- Plug body -->
+  <g transform="translate(256 246)">
+    <!-- prongs -->
+    <rect x="-34" y="-96" width="16" height="48" rx="6" fill="#D4A017"/>
+    <rect x="18" y="-96" width="16" height="48" rx="6" fill="#D4A017"/>
+    <!-- plug head -->
+    <rect x="-58" y="-52" width="116" height="80" rx="24" fill="#FFFFFF"/>
+    <!-- cable -->
+    <path d="M0 28 C 0 70, 40 70, 40 112" stroke="#FFFFFF" stroke-width="18"
+          fill="none" stroke-linecap="round"/>
+    <!-- spark, doubling as the "connection made" cue -->
+    <path d="M46 96 L30 122 L44 122 L28 150 L58 116 L44 116 Z" fill="#D4A017"/>
+  </g>
+</svg>
